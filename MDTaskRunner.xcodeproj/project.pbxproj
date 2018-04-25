@@ -10,6 +10,14 @@
 		2859AF2620913BCB001C7838 /* MDTaskRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2859AF1C20913BCB001C7838 /* MDTaskRunner.framework */; };
 		2859AF2B20913BCB001C7838 /* MDTaskRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF2A20913BCB001C7838 /* MDTaskRunnerTests.swift */; };
 		2859AF2D20913BCB001C7838 /* MDTaskRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 2859AF1F20913BCB001C7838 /* MDTaskRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2859AF5920913CCC001C7838 /* TaskRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF4F20913CCC001C7838 /* TaskRunner.swift */; };
+		2859AF5A20913CCC001C7838 /* SemverVersionSupplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF5120913CCC001C7838 /* SemverVersionSupplier.swift */; };
+		2859AF5B20913CCC001C7838 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF5220913CCC001C7838 /* Version.swift */; };
+		2859AF5C20913CCC001C7838 /* SemverVersionComparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF5320913CCC001C7838 /* SemverVersionComparer.swift */; };
+		2859AF5D20913CCC001C7838 /* VersionComparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF5420913CCC001C7838 /* VersionComparer.swift */; };
+		2859AF5E20913CCC001C7838 /* UpgradeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF5620913CCC001C7838 /* UpgradeTask.swift */; };
+		2859AF5F20913CCC001C7838 /* WL360UpgradeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF5720913CCC001C7838 /* WL360UpgradeTask.swift */; };
+		2859AF6020913CCC001C7838 /* ControllerUpgradeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859AF5820913CCC001C7838 /* ControllerUpgradeTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		2859AF2520913BCB001C7838 /* MDTaskRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDTaskRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2859AF2A20913BCB001C7838 /* MDTaskRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDTaskRunnerTests.swift; sourceTree = "<group>"; };
 		2859AF2C20913BCB001C7838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2859AF4F20913CCC001C7838 /* TaskRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRunner.swift; sourceTree = "<group>"; };
+		2859AF5120913CCC001C7838 /* SemverVersionSupplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemverVersionSupplier.swift; sourceTree = "<group>"; };
+		2859AF5220913CCC001C7838 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		2859AF5320913CCC001C7838 /* SemverVersionComparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemverVersionComparer.swift; sourceTree = "<group>"; };
+		2859AF5420913CCC001C7838 /* VersionComparer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionComparer.swift; sourceTree = "<group>"; };
+		2859AF5620913CCC001C7838 /* UpgradeTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpgradeTask.swift; sourceTree = "<group>"; };
+		2859AF5720913CCC001C7838 /* WL360UpgradeTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WL360UpgradeTask.swift; sourceTree = "<group>"; };
+		2859AF5820913CCC001C7838 /* ControllerUpgradeTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerUpgradeTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,7 @@
 		2859AF1E20913BCB001C7838 /* MDTaskRunner */ = {
 			isa = PBXGroup;
 			children = (
+				2859AF4E20913CCC001C7838 /* Source */,
 				2859AF1F20913BCB001C7838 /* MDTaskRunner.h */,
 				2859AF2020913BCB001C7838 /* Info.plist */,
 			);
@@ -84,6 +101,37 @@
 				2859AF2C20913BCB001C7838 /* Info.plist */,
 			);
 			path = MDTaskRunnerTests;
+			sourceTree = "<group>";
+		};
+		2859AF4E20913CCC001C7838 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2859AF4F20913CCC001C7838 /* TaskRunner.swift */,
+				2859AF5020913CCC001C7838 /* Versions */,
+				2859AF5520913CCC001C7838 /* Upgrade Tasks */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		2859AF5020913CCC001C7838 /* Versions */ = {
+			isa = PBXGroup;
+			children = (
+				2859AF5120913CCC001C7838 /* SemverVersionSupplier.swift */,
+				2859AF5220913CCC001C7838 /* Version.swift */,
+				2859AF5320913CCC001C7838 /* SemverVersionComparer.swift */,
+				2859AF5420913CCC001C7838 /* VersionComparer.swift */,
+			);
+			path = Versions;
+			sourceTree = "<group>";
+		};
+		2859AF5520913CCC001C7838 /* Upgrade Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				2859AF5620913CCC001C7838 /* UpgradeTask.swift */,
+				2859AF5720913CCC001C7838 /* WL360UpgradeTask.swift */,
+				2859AF5820913CCC001C7838 /* ControllerUpgradeTask.swift */,
+			);
+			path = "Upgrade Tasks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +196,7 @@
 				TargetAttributes = {
 					2859AF1B20913BCB001C7838 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					2859AF2420913BCB001C7838 = {
@@ -196,6 +245,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2859AF5A20913CCC001C7838 /* SemverVersionSupplier.swift in Sources */,
+				2859AF6020913CCC001C7838 /* ControllerUpgradeTask.swift in Sources */,
+				2859AF5920913CCC001C7838 /* TaskRunner.swift in Sources */,
+				2859AF5F20913CCC001C7838 /* WL360UpgradeTask.swift in Sources */,
+				2859AF5B20913CCC001C7838 /* Version.swift in Sources */,
+				2859AF5D20913CCC001C7838 /* VersionComparer.swift in Sources */,
+				2859AF5C20913CCC001C7838 /* SemverVersionComparer.swift in Sources */,
+				2859AF5E20913CCC001C7838 /* UpgradeTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +391,7 @@
 		2859AF3120913BCB001C7838 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.markit.MDTaskRunner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +414,7 @@
 		2859AF3220913BCB001C7838 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +436,7 @@
 		2859AF3420913BCB001C7838 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PM8Y4J45MK;
 				INFOPLIST_FILE = MDTaskRunnerTests/Info.plist;
@@ -390,6 +451,7 @@
 		2859AF3520913BCB001C7838 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PM8Y4J45MK;
 				INFOPLIST_FILE = MDTaskRunnerTests/Info.plist;
